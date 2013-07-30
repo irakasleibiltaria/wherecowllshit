@@ -2,36 +2,79 @@
 <html>
   <head>
     <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta charset="utf-8">
     <!-- Bootstrap -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- <h1>Hello, wherecowllshit!</h1> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" media="screen">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">wherecowllshit</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+    <!--[if IE 7]>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div id="sidebar">
+        <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <!-- <div id="logo"> <a href="/"><img src="img/logo.svg" alt="logo" /></a> </div> -->
+        <nav id="nav" class="navigation" role="navigation">
+          <ul class="unstyled">
+            <li class="active" data-section="1"><i class="icon-home"></i> <span>Home</span></li>
+            <li data-section="2" class=""><i class="icon-user"></i> <span>About</span></li>
+            <li data-section="3" class=""><i class="icon-laptop"></i> <span>Projects</span></li>
+            <li data-section="4" class=""><i class="icon-pencil"></i> <span>Social</span></li>
+            <li data-section="5" class="last"><i class="icon-envelope"></i> <span>Contact</span></li>
+          </ul>
+        </nav><!-- /nav -->
+      </div><!-- /sidebar -->
+
+      <div id="container">
+
+        <section class="section" id="section1" data-section="1">
+          <div class="container-fluid">
+            <div class="row-fluid">
+
+              <div class="alt-image img-circle thumb">
+                <img src="img/thumb_donkey.jpg" alt="Your Name" class="img-circle">
+              </div>
+              <div class="span6 intro">
+                <hgroup>
+                  <!-- <h1>Hello There!</h1> -->
+                  <h3>Thesberdin.com</h3>
+                </hgroup>
+                <button class="btn-inverse" data-section="2">
+                  <span>Buy Ticket</span>
+                  <i class="icon-circle-arrow-down"></i>
+                </button>
+              </div><!-- /span6 -->
+
+            </div><!-- /row-fluid -->
+          </div><!-- /container-fluid -->
+        </section><!-- /section -->
+
+
+
+      </div><!-- /container -->
+    </div><!-- /wrapper -->
 
     <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/modernizr.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
